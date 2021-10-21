@@ -1,0 +1,6 @@
+f=open("C:/Users/dell/Desktop/Python files/Files/hello.txt")
+data=f.readline()
+print(data)
+data=f.readline()
+print(data)
+f.close()

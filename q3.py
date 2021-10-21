@@ -1,14 +1,8 @@
-text = input("enter the text ")
-spam = False
-if("click now" in text):
-    spam = True
-elif("subscribe this" in text):
-    spam = True
-elif("make a lot of money" in text):
-    spam = True
-else:
-    spam = False
-if(spam):
-    print("this is spam")
-else:
-    print("this is not spam")
+class Sample:
+    a="Nikita"
+
+a1=Sample()
+a1.a="Arpita"
+#Sample.a="Archana"
+print(Sample.a)
+print(a1.a)

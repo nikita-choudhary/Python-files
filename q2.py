@@ -1,16 +1,15 @@
-s1 = int(input("enter marks of sub 1 : "))
-s2 = int(input("enter marks of sub 2 : "))
-s3 = int(input("enter marks of sub 3 : "))
-sum = s1+s2+s3
-per = sum/300*100
-print(per)
-if(per>40):    
-    if(s1>35 and s2>35 and s3>35):
-        print("pass")
-    else:
-        print("fail")
-elif(per<40):
-
-     print("fail")
-
-
+class Calculator:
+    @staticmethod
+    def greet():
+        print("Hello User!")
+    def squareOfNumber(self,number):
+        self.number=number
+        p=self.number**2
+        print(f"the square of {self.number} is {p}")
+        q=self.number**3
+        print(f"the cube of {self.number} is {q}")
+        r=self.number**0.5
+        print(f"the square root of {self.number} is {int(r)}")
+n=Calculator()
+n.greet()
+n.squareOfNumber(25)
